@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">mobile_programming</string>
+    <string name="text1">Welcome to mobile Programming</string>
+    <string name="text2">Linear layout Demo</string>
+</resources>
