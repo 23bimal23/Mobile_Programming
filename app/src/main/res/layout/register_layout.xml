@@ -22,7 +22,7 @@
             android:layout_marginVertical="20dp"
             android:text="Sign Up"
             android:textStyle="bold"
-            android:textColor="@color/grey"
+            android:textColor="@color/Gray"
             android:textSize="30dp" />
 
         <EditText

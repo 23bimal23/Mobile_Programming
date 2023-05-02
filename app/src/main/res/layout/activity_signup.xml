@@ -48,6 +48,7 @@
 
         >
         <EditText
+            android:id="@+id/editFname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_background"
@@ -58,9 +59,9 @@
             android:textColorHint="@color/white"
             android:layout_marginHorizontal="10dp"/>
         <EditText
+            android:id="@+id/editLname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@drawable/edit_background"
             android:hint="Last Name"
             android:inputType="text"
@@ -69,7 +70,8 @@
             android:textColorHint="@color/white" />
     </LinearLayout>
     <EditText
-        android:layout_width="match_parent"
+        android:id="@+id/editEmail"
+  android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="@drawable/edit_background"
@@ -80,11 +82,23 @@
         android:textColorHint="@color/white" />
 
     <EditText
+        android:id="@+id/editPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="@drawable/edit_background"
         android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+    <EditText
+android:id="@+id/editConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="Confirm Password"
         android:inputType="textPassword"
         android:padding="12dp"
         android:textColor="@color/white"
@@ -100,7 +114,8 @@
 
         <androidx.appcompat.widget.AppCompatCheckBox
             android:layout_width="20dp"
-            android:layout_height="20dp"/>
+            android:layout_height="20dp"
+            android:id="@+id/checkbox"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,7 +124,7 @@
             android:textSize="18sp"/>
     </LinearLayout>
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSignUP"
+        android:id="@+id/btnSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="120dp"
@@ -136,13 +151,15 @@
             android:textSize="18sp" />
 
         <TextView
+            android:id="@+id/txtSignin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="Sign In"
             android:textColor="@color/white"
             android:textSize="16dp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold|italic"
+            />
     </LinearLayout>
 
 
