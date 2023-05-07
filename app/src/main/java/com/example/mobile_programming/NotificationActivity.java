@@ -6,12 +6,12 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.view.Menu;
 
-public class AccountActivity extends AppCompatActivity {
+public class NotificationActivity extends AppCompatActivity {
 private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_account);
+        setContentView(R.layout.activity_notification);
         initToolbar();
     }
     private void initToolbar() {
@@ -19,9 +19,8 @@ private Toolbar toolbar;
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setTitle("Account");
+        getSupportActionBar().setTitle("Notifications");
     }
-
 
 
     @Override

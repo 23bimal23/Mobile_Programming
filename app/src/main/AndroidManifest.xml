@@ -12,13 +12,14 @@
         android:theme="@style/Theme.Mobile_programming"
         tools:targetApi="31">
         <activity
-            android:name=".AccountActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".NotificationActivity"
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AccountActivity"
+            android:exported="false">
+
         </activity>
         <activity
             android:name=".DashboardActivity"

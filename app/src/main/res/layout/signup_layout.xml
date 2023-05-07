@@ -19,17 +19,16 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:src="@drawable/logo"
-        ></ImageView>
+        android:src="@drawable/logo2"
+       />
 
     <TextView
         android:id="@+id/txtSignUp"
         android:layout_width="219dp"
         android:layout_height="wrap_content"
-        android:layout_gravity=""
+        android:layout_gravity="center"
         android:layout_margin="20dp"
         android:text="Sign Up"
-
         android:textColor="@color/White"
         android:textSize="30dp"
         />
@@ -118,12 +117,7 @@
         android:text="SignUp"
         android:textAllCaps="false"
         android:textColor="@color/White"
-        android:textSize="15dp"
-
-
-
-
-
+        android:textSize="15sp"
         />
     <LinearLayout
         android:layout_width="wrap_content"
@@ -138,7 +132,7 @@
             android:layout_height="wrap_content"
             android:text="Already have an account?"
             android:textColor="@color/White"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
 
 
         <TextView
