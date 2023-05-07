@@ -14,7 +14,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.mobile_programming.R;
 
 public class SignupActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -34,7 +33,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         //        Toast.makeText(this, "email", Toast.LENGTH_SHORT).show();
         Log.d("Email Address",email);
         initToolbar();
-        findview();
+        findView();
         //        btnSignUp.setOnClickListener(new View.OnClickListener() {
         //            @Override
         //            public void onClick(View view) {
@@ -65,7 +64,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         return super.onCreateOptionsMenu(menu);
     }
 
-    private void findview(){
+    private void findView(){
         edtName = findViewById(R.id.edtName);
         edtEmail = findViewById(R.id.edtEmail);
         edtPass = findViewById(R.id.edtPass);
@@ -105,7 +104,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                     Toast.makeText(this, "Redirected from SignUp Button", Toast.LENGTH_LONG).show();
                 }
                 else {
-                    Toast.makeText(this, "Password and Confrim Password didn't match", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "Password and Confirm Password didn't match", Toast.LENGTH_LONG).show();
                 }
 
             }
