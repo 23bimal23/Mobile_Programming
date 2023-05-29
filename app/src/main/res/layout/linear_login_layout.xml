@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/AliceBlue"
     android:orientation="vertical">
 
 
@@ -13,32 +13,33 @@
             />
 
     <ImageView
+        android:contentDescription="logo"
         android:id="@+id/imgLogo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="22dp"
-        android:src="@drawable/logo2"></ImageView>
+        android:src="@drawable/logo2"/>
 
     <TextView
         android:id="@+id/txtBCA"
-        android:layout_width="219dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="32dp"
         android:text="BCA 6th Sem"
-        android:textColor="@color/White"
-        android:textSize="24dp" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/txtWelcome"
-        android:layout_width="219dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:text="Welcome to the Mobile"
-        android:textColor="@color/White"
-        android:textSize="20dp" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/edtEmail"
@@ -49,8 +50,8 @@
         android:hint="Email Address"
         android:inputType="textEmailAddress"
         android:padding="10dp"
-        android:textColor="@color/White"
-        android:textColorHint="@color/White" />
+        android:textColor="@color/black"
+        android:textColorHint="@color/Gray" />
 
     <EditText
         android:id="@+id/edtPass"
@@ -64,9 +65,16 @@
         android:inputType="textPassword"
         android:padding="10dp"
         android:text=""
-        android:textColor="@color/White"
-        android:textColorHint="@color/White" />
-
+        android:textColor="@color/black"
+        android:textColorHint="@color/Gray" />
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Remember password"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
     <TextView
         android:id="@+id/txtForgot"
         android:layout_width="wrap_content"
@@ -74,20 +82,24 @@
         android:layout_gravity="end"
         android:layout_marginEnd="20dp"
         android:padding="10dp"
-        android:text="Forgot Password"
-        android:textColor="@color/White" />
+        android:text="Forgot Password ??"
+        android:textColor="@color/BlueViolet" />
+
+
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:paddingHorizontal="20dp"
         android:layout_marginHorizontal="150dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/login_button"
-        android:text="SignIn"
+        android:text="Sign In"
         android:textAllCaps="false"
-        android:textColor="@color/White"
+        android:textColor="@color/white"
 
         />
 
@@ -103,8 +115,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Don't have an account?"
-            android:textColor="@color/White"
-            android:textSize="25dp" />
+            android:textColor="@color/BlueViolet"
+            android:textSize="20sp" />
 
 
         <TextView
@@ -113,8 +125,8 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="Sign Up"
-            android:textColor="@color/Coral"
-            android:textSize="25dp"
+            android:textColor="@color/material_dynamic_neutral0"
+            android:textSize="25sp"
             android:textStyle="bold|italic" />
 
 

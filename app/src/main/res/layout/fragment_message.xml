@@ -3,10 +3,18 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/RosyBrown"
+    android:background="@color/BurlyWood"
 
     >
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/message"/>
     <TextView
+        android:id="@+id/txtMsg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -22,11 +30,19 @@
         android:text="Hello User"
         android:textColor="@color/White"
         android:textSize="30dp"/>
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+
+    <Button
+        android:id="@+id/btnAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="22dp"
-        android:src="@drawable/logo2"/>
+        android:text="Show Alert Dialogue"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Show Custom Dialogue"
+        android:textAllCaps="false"/>
 </LinearLayout>

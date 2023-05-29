@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/Lavender"
 
     >
     <include
@@ -14,9 +14,9 @@
 
 
     <ImageView
-
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    android:contentDescription="logo"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:src="@drawable/logo2"
@@ -27,12 +27,14 @@
         android:layout_width="219dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="20dp"
         android:text="Sign Up"
-        android:textColor="@color/White"
-        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:paddingHorizontal="55dp"
+        android:layout_marginVertical="10dp"
         />
     <EditText
+        android:autofillHints="e.g. joeh"
         android:id="@+id/edtName"
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -44,8 +46,8 @@
         android:inputType="text"
         android:padding="10dp"
         android:text=""
-        android:textColor="@color/White"
-        android:textColorHint="@color/White"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Gray"
 
         />
     <EditText
@@ -60,8 +62,8 @@
         android:inputType="textEmailAddress"
         android:padding="10dp"
         android:text=""
-        android:textColor="@color/White"
-        android:textColorHint="@color/White"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Gray"
 
         />
     <EditText
@@ -76,8 +78,8 @@
         android:inputType="textPassword"
         android:padding="10dp"
         android:text=""
-        android:textColor="@color/White"
-        android:textColorHint="@color/White" />
+        android:textColor="@color/black"
+        android:textColorHint="@color/Gray" />
 
     <EditText
         android:id="@+id/edtConfPass"
@@ -91,8 +93,8 @@
         android:inputType="textPassword"
         android:padding="10dp"
         android:text=""
-        android:textColor="@color/White"
-        android:textColorHint="@color/White"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Gray"
 
         />
 
@@ -100,11 +102,11 @@
         android:id="@+id/boxTerms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="Accept Terms and Conditions"
-        android:textColor="@color/White"
-        android:textSize="20dp" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSignUp"
@@ -114,7 +116,7 @@
         android:layout_marginHorizontal="150dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/login_button"
-        android:text="SignUp"
+        android:text="Sign Up"
         android:textAllCaps="false"
         android:textColor="@color/White"
         android:textSize="15sp"
@@ -131,7 +133,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Already have an account?"
-            android:textColor="@color/White"
+            android:textColor="@color/BlueViolet"
             android:textSize="15sp" />
 
 
@@ -141,8 +143,8 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="Sign In"
-            android:textColor="@color/Chocolate"
-            android:textSize="25dp"
+            android:textColor="@color/Maroon"
+            android:textSize="20sp"
             android:textStyle="bold|italic" />
 
 

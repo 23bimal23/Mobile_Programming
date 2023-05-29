@@ -6,7 +6,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
-import android.graphics.drawable.Icon;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,7 +18,7 @@ public class DashboardActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private TabLayout tabLayout;
 
-    private int[] iconLists = {R.drawable.home, R.drawable.message, R.drawable.profile};
+    private int[] iconLists = {R.drawable.home, R.drawable.message, R.drawable.notification_icon, R.drawable.profile};
 
 
     @Override
@@ -46,6 +45,9 @@ public class DashboardActivity extends AppCompatActivity {
             Toast.makeText(this, "Account Icon clicked", Toast.LENGTH_SHORT).show();
             startActivity(intent);
         }
+
+
+
         return super.onOptionsItemSelected(item);
     }
     private void initToolbar() {
@@ -54,6 +56,22 @@ public class DashboardActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
         getSupportActionBar().setTitle("Dashboard");
+    }
+    private void setIcon(){
+        tabLayout.getTabAt(0).setIcon(iconLists[0]);
+        tabLayout.getTabAt(1).setIcon(iconLists[1]);
+        tabLayout.getTabAt(2).setIcon(iconLists[2]);
+        tabLayout.getTabAt(3).setIcon(iconLists[3]);
+
+    }
+    private void setupViewPager(){
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new HomeFragment(), "Home");
+        adapter.addFragment(new MessageFragment(), "Message");
+        adapter.addFragment(new NotificationFragment(), "Notification");
+        adapter.addFragment(new ProfileFragment(), "Profile");
+
+        viewPager.setAdapter(adapter);
     }
 
 
@@ -66,5 +84,8 @@ public class DashboardActivity extends AppCompatActivity {
     private void findview(){
         tabLayout=findViewById(R.id.tabLayout);
         viewPager=findViewById(R.id.viewPager);
+        setupViewPager();
+        tabLayout.setupWithViewPager(viewPager);
+        setIcon();
     }
 }

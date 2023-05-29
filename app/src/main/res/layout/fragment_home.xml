@@ -3,16 +3,23 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/BurlyWood"
 
     >
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/home"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="20dp"
         android:text="Welcome to Home"
-        android:textColor="@color/White"
+        android:textColor="@color/black"
         android:textSize="30dp"/>
     <TextView
         android:layout_width="match_parent"
@@ -20,7 +27,7 @@
         android:layout_gravity="center"
         android:layout_margin="20dp"
         android:text="Gender"
-        android:textColor="@color/White"
+        android:textColor="@color/black"
         android:textSize="30dp"/>
     <RadioGroup
         android:id="@+id/rdgGender"
@@ -33,23 +40,51 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="male"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
         <RadioButton
             android:id="@+id/rdFemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="female"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
         <RadioButton
             android:id="@+id/rdOthers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Others"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
     </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Skills"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:id="@+id/chkJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="java"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:id="@+id/chkPython"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Python"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:id="@+id/chkReact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="React"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
     <Button
         android:id="@+id/btnSend"
         android:layout_width="wrap_content"

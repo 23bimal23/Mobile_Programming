@@ -13,5 +13,11 @@
         android:title="account"
         app:showAsAction="always"
         />
+    <item
+        android:id="@+id/logo"
+        android:icon="@drawable/logo2"
+        android:title="home"
+        app:showAsAction="always"
+        />
 
 </menu>
